@@ -42,7 +42,7 @@ gulp.task('htmldist',function() {
 gulp.task('jsdist',function() {
   console.log("Copiando js a dist");
   return gulp
-    .src(appfolder+'/js/*.js')
+    .src(['!'+appfolder+'/js/*.test.js', appfolder+'/js/*.js'])
     .pipe(gulp.dest(distfolder+'/js'));
 });
 
@@ -87,4 +87,4 @@ gulp.task('clean:dist', function() {
   return del.sync(distfolder);
 });
 
-gulp.task('default',['sass','htmldist','sass','cssdist','jsdist','images']);
+gulp.task('default',['sass','htmldist','sass','cssdist','jsdist','images','fonts']);
