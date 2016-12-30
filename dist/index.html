@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+    <meta name="theme-color" content="#9E5CCA">
+    <meta name="msapplication-navbutton-color" content="#9E5CCA">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#9E5CCA">
+    <meta name="description" content="Organiza tu fiesta desde la comodidad de tu casa">
+    <!-- styling  -->
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" /> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>tuFiesta</title>
+  </head>
+  <body>
+    <h1 class="sr-only">tuFiesta Landing</h1>
+    <header class="grid site-header">
+      <div class="site-logo grid__item palm--one-whole one-fifth">
+        <a href="/" class="push--left">
+          <span class="icon icon--large icon-logo1"></span>
+          <span>tuFiesta</span>
+        </a>
+      </div><!--
+      --><div class="grid__item palm--one-whole three-fifths">
+        <nav class="main-nav text-center">
+          <h2 class="sr-only">Menu principal</h2>
+          <ul class="list-unstyled list-inline">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">¿Quienes somos?</a></li>
+          </ul>
+        </nav>
+      </div><!--
+      --><div class="grid__item palm--one-whole one-fifth">
+        <nav class="seconday-nav text-center">
+          <h2 class="sr-only">Menu login</h2>
+          <ul class="list-unstyled list-inline">
+            <li><a href="#">Iniciar sesi&oacute;n</a></li>
+            <li><a class="button button--terciary register-link" href="#">Registrarse</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <h2 class="sr-only">Banner principal</h2>
+      <div class="hero-banner"></div>
+    </section>
+    <div class="wrapper clear">
+      <section class="featured-events">
+        <h3 class="push--ends">Eventos destacados</h3>
+        <div>
+          <ul class="list-unstyled list-inline items-slider js-featured-events">
+            <li>
+              <div class="featured-event">
+                <h4 class="push--bottom"><a href="events/verEvento/1" title="Ver detalles evento 1">Evento 1</a></h4>
+                <div>
+                  <img src="events/eventImage/1" alt="Evento 1 image" class="display-block">
+                  <small>2016-12-16 19:00</small>
+                  <p class="flush--bottom push--top">Descripcion evento 1</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="featured-event">
+                <h4 class="push--bottom"><a href="events/viewEvent/2" title="Ver detalles evento 2">Evento 2</a></h4>
+                <div>
+                  <img src="events/viewEvent/2" alt="Evento 2 image" class="display-block">
+                  <small>2016-12-17 19:00</small>
+                  <p class="flush--bottom push--top">Descripcion evento 2</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="push--top">
+        <h3 class="text-center">¿C&oacute;mo funciona tuFiesta?</h3>
+        <div class="grid grid--full clearfix text-center">
+          <div class="grid__item one-half">
+            <h4>
+              <span class="icon icon--large icon-search"></span>
+              Buscar un evento
+            </h4>
+            <p>Descubre eventos cercanos a ti</p>
+            <a href="#">Encuentra un evento</a>
+          </div><!--
+          --><div class="grid__item one-half text-center">
+            <h4>
+              <span class="icon icon--large icon-plus"></span>
+              Crear un evento
+            </h4>
+            <p>Crea un evento e invita a tus amigos</p>
+            <a href="#">Crea un evento</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="push--top">
+      <nav class="footer-nav text-center">
+        <h2 class="sr-only">Menu secundario</h2>
+        <ul class="list-unstyled list-inline">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">¿Quienes somos?</a></li>
+        </ul>
+      </nav>
+      <div class="push--top">
+        <small>&copy; 2017 tuFiesta</small>
+      </div>
+    </footer>
+    <div hidden class="hidden" itemscope itemtype="http://schema.org/Organization">
+      <span itemprop="name">tuFiesta</span>
+      <span itemprop="description">Organiza tu fiesta desde la comodidad de tu casa</span>
+      <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">Direccion</span>
+          <span itemprop="addressLocality">Barranquilla</span>
+          <span itemprop="addressRegion">Atlantico</span>
+          <span itemprop="addressCountry">Colombia</span>
+          <span itemprop="postalCode">018000</span>
+        </span>
+        <span itemprop="telephone">555-5555</span>
+        <a href="mailto:contacto@tufiesta.co" itemprop="email">contacto@tufiesta.co</a>
+      </span>
+    </div>
+    <!-- javascript -->
+    <!-- polyfills -->
+    <!-- plugins -->
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> -->
+    <!-- app -->
+    <script src="js/app.js"></script>
+    <!-- templates -->
+  </body>
+</html>

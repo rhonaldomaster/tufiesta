@@ -1,8 +1,5 @@
 .DS_Store
 
-dist/
-dist/*
-
 application/cache/*
 !application/cache/index.html
 !application/cache/.htaccess
